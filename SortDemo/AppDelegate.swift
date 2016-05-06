@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  SortDemo
 //
-//  Created by Singtel on 6/5/16.
+//  Created by ChangLing on 6/5/16.
 //  Copyright © 2016 ChangLing. All rights reserved.
 //
 
