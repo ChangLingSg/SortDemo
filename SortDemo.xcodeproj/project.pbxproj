@@ -14,6 +14,7 @@
 		DFAD4BD01CDC31960069A0D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFAD4BCE1CDC31960069A0D5 /* LaunchScreen.storyboard */; };
 		DFAD4BDB1CDC31960069A0D5 /* SortDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAD4BDA1CDC31960069A0D5 /* SortDemoTests.swift */; };
 		DFAD4BE61CDC31960069A0D5 /* SortDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAD4BE51CDC31960069A0D5 /* SortDemoUITests.swift */; };
+		DFAD4BF41CDC4D170069A0D5 /* QickSortHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAD4BF31CDC4D170069A0D5 /* QickSortHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		DFAD4BE11CDC31960069A0D5 /* SortDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SortDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFAD4BE51CDC31960069A0D5 /* SortDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortDemoUITests.swift; sourceTree = "<group>"; };
 		DFAD4BE71CDC31960069A0D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFAD4BF31CDC4D170069A0D5 /* QickSortHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QickSortHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				DFAD4BC51CDC31960069A0D5 /* AppDelegate.swift */,
 				DFAD4BC71CDC31960069A0D5 /* ViewController.swift */,
+				DFAD4BF31CDC4D170069A0D5 /* QickSortHandler.swift */,
 				DFAD4BC91CDC31960069A0D5 /* Main.storyboard */,
 				DFAD4BCC1CDC31960069A0D5 /* Assets.xcassets */,
 				DFAD4BCE1CDC31960069A0D5 /* LaunchScreen.storyboard */,
@@ -258,6 +261,7 @@
 			files = (
 				DFAD4BC81CDC31960069A0D5 /* ViewController.swift in Sources */,
 				DFAD4BC61CDC31960069A0D5 /* AppDelegate.swift in Sources */,
+				DFAD4BF41CDC4D170069A0D5 /* QickSortHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,6 +488,7 @@
 				DFAD4BEC1CDC31960069A0D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DFAD4BED1CDC31960069A0D5 /* Build configuration list for PBXNativeTarget "SortDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +497,7 @@
 				DFAD4BEF1CDC31960069A0D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DFAD4BF01CDC31960069A0D5 /* Build configuration list for PBXNativeTarget "SortDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +506,7 @@
 				DFAD4BF21CDC31960069A0D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
