@@ -21,13 +21,13 @@ class ViewController: UIViewController {
 
     func testQickSort1(){
         var array = [233,12,44,78,11,32,45,12]
-        QickSortHandler.sort(&array, left: 0, right: array.count-1)
+        QickSortHandler.sort(array: &array, left: 0, right: array.count-1)
         print(array)
     }
     
     func testQickSort2(){
         var array = [233,12,44,78,11,32,45,12]
-        QickSortHandler.quickSort2(&array, left: 0, right:array.count-1)
+        QickSortHandler.quickSort2(dataList: &array, left: 0, right:array.count-1)
         print(array)
     }
 

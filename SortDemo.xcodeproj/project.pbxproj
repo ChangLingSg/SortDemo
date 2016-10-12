@@ -15,6 +15,8 @@
 		DFAD4BDB1CDC31960069A0D5 /* SortDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAD4BDA1CDC31960069A0D5 /* SortDemoTests.swift */; };
 		DFAD4BE61CDC31960069A0D5 /* SortDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAD4BE51CDC31960069A0D5 /* SortDemoUITests.swift */; };
 		DFAD4BF41CDC4D170069A0D5 /* QickSortHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAD4BF31CDC4D170069A0D5 /* QickSortHandler.swift */; };
+		DFAD4BF61CDC680A0069A0D5 /* MergeSortHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAD4BF51CDC680A0069A0D5 /* MergeSortHandler.swift */; };
+		DFAD4BF81CDC687D0069A0D5 /* FunctionSpecifyDoc.text in Sources */ = {isa = PBXBuildFile; fileRef = DFAD4BF71CDC687D0069A0D5 /* FunctionSpecifyDoc.text */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		DFAD4BE51CDC31960069A0D5 /* SortDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortDemoUITests.swift; sourceTree = "<group>"; };
 		DFAD4BE71CDC31960069A0D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DFAD4BF31CDC4D170069A0D5 /* QickSortHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QickSortHandler.swift; sourceTree = "<group>"; };
+		DFAD4BF51CDC680A0069A0D5 /* MergeSortHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MergeSortHandler.swift; sourceTree = "<group>"; };
+		DFAD4BF71CDC687D0069A0D5 /* FunctionSpecifyDoc.text */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = FunctionSpecifyDoc.text; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +105,8 @@
 			children = (
 				DFAD4BC51CDC31960069A0D5 /* AppDelegate.swift */,
 				DFAD4BC71CDC31960069A0D5 /* ViewController.swift */,
-				DFAD4BF31CDC4D170069A0D5 /* QickSortHandler.swift */,
+				DFAD4BF91CDC69190069A0D5 /* QuickSort */,
+				DFAD4BFA1CDC69370069A0D5 /* MergeSort */,
 				DFAD4BC91CDC31960069A0D5 /* Main.storyboard */,
 				DFAD4BCC1CDC31960069A0D5 /* Assets.xcassets */,
 				DFAD4BCE1CDC31960069A0D5 /* LaunchScreen.storyboard */,
@@ -126,6 +131,23 @@
 				DFAD4BE71CDC31960069A0D5 /* Info.plist */,
 			);
 			path = SortDemoUITests;
+			sourceTree = "<group>";
+		};
+		DFAD4BF91CDC69190069A0D5 /* QuickSort */ = {
+			isa = PBXGroup;
+			children = (
+				DFAD4BF31CDC4D170069A0D5 /* QickSortHandler.swift */,
+				DFAD4BF71CDC687D0069A0D5 /* FunctionSpecifyDoc.text */,
+			);
+			name = QuickSort;
+			sourceTree = "<group>";
+		};
+		DFAD4BFA1CDC69370069A0D5 /* MergeSort */ = {
+			isa = PBXGroup;
+			children = (
+				DFAD4BF51CDC680A0069A0D5 /* MergeSortHandler.swift */,
+			);
+			name = MergeSort;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,13 +218,16 @@
 				TargetAttributes = {
 					DFAD4BC11CDC31960069A0D5 = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0800;
 					};
 					DFAD4BD51CDC31960069A0D5 = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0800;
 						TestTargetID = DFAD4BC11CDC31960069A0D5;
 					};
 					DFAD4BE01CDC31960069A0D5 = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0800;
 						TestTargetID = DFAD4BC11CDC31960069A0D5;
 					};
 				};
@@ -259,9 +284,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFAD4BF81CDC687D0069A0D5 /* FunctionSpecifyDoc.text in Sources */,
 				DFAD4BC81CDC31960069A0D5 /* ViewController.swift in Sources */,
 				DFAD4BC61CDC31960069A0D5 /* AppDelegate.swift in Sources */,
 				DFAD4BF41CDC4D170069A0D5 /* QickSortHandler.swift in Sources */,
+				DFAD4BF61CDC680A0069A0D5 /* MergeSortHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +436,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CL.SortDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -420,6 +448,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CL.SortDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -431,6 +460,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CL.SortDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SortDemo.app/SortDemo";
 			};
 			name = Debug;
@@ -443,6 +473,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CL.SortDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SortDemo.app/SortDemo";
 			};
 			name = Release;
@@ -454,6 +485,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CL.SortDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = SortDemo;
 			};
 			name = Debug;
@@ -465,6 +497,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CL.SortDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = SortDemo;
 			};
 			name = Release;
